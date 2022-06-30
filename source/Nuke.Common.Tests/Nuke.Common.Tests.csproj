@@ -5,7 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Nuke.CodeGeneration\Nuke.CodeGeneration.csproj" />
     <ProjectReference Include="..\Nuke.Common\Nuke.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CliWrap" Version="3.4.4" />
+    <PackageReference Include="Markdig" Version="0.30.2" />
   </ItemGroup>
 
 </Project>

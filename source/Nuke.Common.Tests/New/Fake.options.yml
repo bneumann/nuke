@@ -1,0 +1,58 @@
+name: Boolean
+type: bool
+format: --boolean {value}
+description: |
+  The .NET CLI is included with the [.NET SDK](https://docs.microsoft.com/en-us/dotnet/core/sdk). To learn how to install the .NET SDK, see [Install .NET Core](https://docs.microsoft.com/en-us/dotnet/core/install/windows).
+  
+  This is the next paragraph with `some code`.
+  
+  - And here is a list item
+  - And another [one](https://www.google.com)  
+
+---
+
+name: Flag
+type: bool
+format: --flag
+description: Simple flag.
+
+---
+
+name: String
+type: string
+format: --string {value}
+description: Simple string.
+
+---
+
+name: Integer
+type: int
+format: --integer {value}
+description: Simple integer.
+
+---
+
+name: Lists
+type: list
+value: string
+format: --logger {value}
+description: Simple list.
+
+---
+
+name: Dictionaries
+type: dictionary
+key: string
+value: int
+format: /p:{key}={value}
+alternativeFormat: /property:{key}={value}
+description: Simple dictionary.
+
+---
+
+name: Lookups
+type: lookup
+key: string
+value: string
+format: --lookup {key}={value}
+description: Simple lookup.
